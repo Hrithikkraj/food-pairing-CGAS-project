@@ -78,9 +78,12 @@ class TestMatching(unittest.TestCase):
                     shutil.copy2(source, interim / name)
             source_log = project_root / "data" / "external" / "matching_log.csv"
             log = pd.read_csv(source_log)
+            for column in ("fdc_id", "usda_description", "reviewer", "note"):
+                log[column] = log[column].astype(object)
+                log[column] = ""
             filled_ids = log["ahn_id"].head(2).tolist()
-            log.loc[log["ahn_id"] == filled_ids[0], ["fdc_id", "usda_description", "reviewer"]] = [168878, "Reviewed apple", "human"]
-            log.loc[log["ahn_id"] == filled_ids[1], ["fdc_id", "usda_description", "reviewer"]] = [168879, "Reviewed food", "human"]
+            log.loc[log["ahn_id"] == filled_ids[0], ["fdc_id", "usda_description", "reviewer", "note"]] = [168878, "Reviewed apple", "human", "keep apple"]
+            log.loc[log["ahn_id"] == filled_ids[1], ["fdc_id", "usda_description", "reviewer", "note"]] = [168879, "Reviewed food", "human", "keep food"]
             log.to_csv(external / "matching_log.csv", index=False)
             before = log[log["ahn_id"].isin(filled_ids)].copy()
             config = root / "params.yaml"
