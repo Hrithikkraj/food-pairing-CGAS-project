@@ -1,0 +1,326 @@
+{
+  "params_hash": "66b50c92",
+  "seed": 42,
+  "total_pairs": 23871,
+  "analyses": {
+    "A1_correlation_all": {
+      "spearman_rho": -0.0961,
+      "ci_low": -0.1617,
+      "ci_high": -0.0013,
+      "naive_p_value": 4.485564086056512e-50,
+      "pearson_r": -0.1143,
+      "pearson_p": 2.7473224037293427e-70
+    },
+    "A1_correlation_no_spice_herb": {
+      "spearman_rho": 0.0021,
+      "ci_low": -0.0774,
+      "ci_high": 0.1,
+      "naive_p_value": 0.7845755486526149,
+      "pearson_r": -0.0401,
+      "pearson_p": 1.4286489467426638e-07
+    },
+    "A2_regression": {
+      "n_shared": {
+        "coefficient": -0.002375854751740278,
+        "p_value": 5.422145592949453e-148,
+        "r_squared": 0.13484021297387438
+      },
+      "n_shared_norm": {
+        "coefficient": -0.21015590676938445,
+        "p_value": 3.7802344564275306e-177,
+        "r_squared": 0.14508631236922342
+      }
+    },
+    "A2_note": "Standard errors are pair-level and optimistic because pairs share ingredients.",
+    "A3_real_vs_random_all_global": {
+      "observed_mean": 0.28435257563368765,
+      "null_mean": 0.29794618300750764,
+      "null_std": 0.010190808706878529,
+      "z": -1.3339085998783053,
+      "p_greater": 0.9019607843137255,
+      "p_less": 0.11764705882352941,
+      "p_two_sided": 0.23529411764705882,
+      "p_value": 0.9019607843137255,
+      "n_perm": 50,
+      "naive_p_value": 1.0
+    },
+    "A3_real_vs_random_all_within_category": {
+      "observed_mean": 0.28435257563368765,
+      "null_mean": 0.3067955102951015,
+      "null_std": 0.008714708578343774,
+      "z": -2.57529376451956,
+      "p_greater": 1.0,
+      "p_less": 0.0196078431372549,
+      "p_two_sided": 0.0392156862745098,
+      "p_value": 1.0,
+      "n_perm": 50,
+      "naive_p_value": 1.0
+    },
+    "A3_real_vs_random_no_spice_herb_global": {
+      "observed_mean": 0.22340013927576602,
+      "null_mean": 0.29906178779437825,
+      "null_std": 0.016258757434306274,
+      "z": -4.653593537164457,
+      "p_greater": 1.0,
+      "p_less": 0.0196078431372549,
+      "p_two_sided": 0.0392156862745098,
+      "p_value": 1.0,
+      "n_perm": 50,
+      "naive_p_value": 1.0
+    },
+    "A3_real_vs_random_no_spice_herb_within_category": {
+      "observed_mean": 0.22340013927576602,
+      "null_mean": 0.25796657381615595,
+      "null_std": 0.010382858664337616,
+      "z": -3.3291828058024646,
+      "p_greater": 1.0,
+      "p_less": 0.0196078431372549,
+      "p_two_sided": 0.0392156862745098,
+      "p_value": 1.0,
+      "n_perm": 50,
+      "naive_p_value": 1.0
+    },
+    "A4_cuisine_split": [
+      {
+        "group": "African",
+        "n_recipes": 155,
+        "n_pairs": 258,
+        "mean_C": 0.33614844961240314,
+        "rho": -0.21030273953045744,
+        "ci_low": -0.519903651614929,
+        "ci_high": 0.09039174824265238,
+        "naive_p_value": 0.0006747019626038339
+      },
+      {
+        "group": "East Asian",
+        "n_recipes": 3705,
+        "n_pairs": 1902,
+        "mean_C": 0.2749664563617245,
+        "rho": -0.07545330660708276,
+        "ci_low": -0.2651768590711727,
+        "ci_high": 0.04316826213795015,
+        "naive_p_value": 0.0009905543872589318
+      },
+      {
+        "group": "Latin American",
+        "n_recipes": 2917,
+        "n_pairs": 1718,
+        "mean_C": 0.2882250873108265,
+        "rho": -0.15476451824434442,
+        "ci_low": -0.2852492109680194,
+        "ci_high": 0.01607584514693008,
+        "naive_p_value": 1.1257494604355892e-10
+      },
+      {
+        "group": "Middle Eastern and North African",
+        "n_recipes": 522,
+        "n_pairs": 594,
+        "mean_C": 0.29781969696969696,
+        "rho": -0.201585019353453,
+        "ci_low": -0.4075568685093842,
+        "ci_high": 0.02513536763512738,
+        "naive_p_value": 7.283563244446843e-07
+      },
+      {
+        "group": "North American",
+        "n_recipes": 41524,
+        "n_pairs": 6933,
+        "mean_C": 0.28364096350786094,
+        "rho": -0.15240150885755416,
+        "ci_low": -0.24670010531956954,
+        "ci_high": -0.021521146585315037,
+        "naive_p_value": 2.673159686554767e-37
+      },
+      {
+        "group": "Northern and Eastern European",
+        "n_recipes": 631,
+        "n_pairs": 535,
+        "mean_C": 0.2487585046728972,
+        "rho": -0.23759597877261573,
+        "ci_low": -0.4374125264753824,
+        "ci_high": 0.00814814256947605,
+        "naive_p_value": 2.6577336561370194e-08
+      },
+      {
+        "group": "South Asian",
+        "n_recipes": 621,
+        "n_pairs": 762,
+        "mean_C": 0.3039792650918635,
+        "rho": -0.2771242652427801,
+        "ci_low": -0.47882026276000156,
+        "ci_high": -0.060750064242093386,
+        "naive_p_value": 6.681905050854572e-15
+      },
+      {
+        "group": "Southeast Asian",
+        "n_recipes": 457,
+        "n_pairs": 801,
+        "mean_C": 0.28588464419475657,
+        "rho": -0.03540469959928435,
+        "ci_low": -0.19060398270074302,
+        "ci_high": 0.16447490876207824,
+        "naive_p_value": 0.31693765962854475
+      },
+      {
+        "group": "Southern European",
+        "n_recipes": 4180,
+        "n_pairs": 2232,
+        "mean_C": 0.28901017025089604,
+        "rho": -0.21091361721357427,
+        "ci_low": -0.3673413155979227,
+        "ci_high": -0.049035054960175545,
+        "naive_p_value": 7.321492551226377e-24
+      },
+      {
+        "group": "Western European",
+        "n_recipes": 2209,
+        "n_pairs": 1470,
+        "mean_C": 0.27667721088435376,
+        "rho": -0.2269425731486935,
+        "ci_low": -0.3800163683443477,
+        "ci_high": -0.09759813481020868,
+        "naive_p_value": 1.263937261712217e-18
+      }
+    ],
+    "A5_sensitivity": [
+      {
+        "x": "n_shared",
+        "metric": "C_main",
+        "rho": -0.09608737022825702,
+        "ci_low": -0.1617281628847772,
+        "ci_high": -0.00129152659015318,
+        "naive_p_value": 4.485564086056512e-50
+      },
+      {
+        "x": "n_shared_norm",
+        "metric": "C_main",
+        "rho": -0.11952761392538189,
+        "ci_low": -0.19333299327800624,
+        "ci_high": -0.05013135651792067,
+        "naive_p_value": 1.1226497965992482e-76
+      },
+      {
+        "x": "n_shared",
+        "metric": "C_5_15",
+        "rho": -0.06951328440339843,
+        "ci_low": -0.13240850495184842,
+        "ci_high": -0.011686740314405924,
+        "naive_p_value": 5.772915683179992e-27
+      },
+      {
+        "x": "n_shared_norm",
+        "metric": "C_5_15",
+        "rho": -0.11350934014018331,
+        "ci_low": -0.17427016583908714,
+        "ci_high": -0.05367365412993151,
+        "naive_p_value": 2.765919552858008e-69
+      },
+      {
+        "x": "n_shared",
+        "metric": "C_10_20",
+        "rho": -0.09608737022825702,
+        "ci_low": -0.1617281628847772,
+        "ci_high": -0.00129152659015318,
+        "naive_p_value": 4.485564086056512e-50
+      },
+      {
+        "x": "n_shared_norm",
+        "metric": "C_10_20",
+        "rho": -0.11952761392538189,
+        "ci_low": -0.19333299327800624,
+        "ci_high": -0.05013135651792067,
+        "naive_p_value": 1.1226497965992482e-76
+      },
+      {
+        "x": "n_shared",
+        "metric": "C_10_25",
+        "rho": -0.08109639663148997,
+        "ci_low": -0.1517865611211527,
+        "ci_high": 0.0052548666552362615,
+        "naive_p_value": 3.9948627994837836e-36
+      },
+      {
+        "x": "n_shared_norm",
+        "metric": "C_10_25",
+        "rho": -0.10638188670865982,
+        "ci_low": -0.17352836707010533,
+        "ci_high": -0.02500662625545396,
+        "naive_p_value": 4.9270097347375805e-61
+      },
+      {
+        "x": "n_shared",
+        "metric": "C_15_30",
+        "rho": -0.10401655518080105,
+        "ci_low": -0.17733228611967555,
+        "ci_high": -0.01701566205440789,
+        "naive_p_value": 2.0444263535550936e-58
+      },
+      {
+        "x": "n_shared_norm",
+        "metric": "C_15_30",
+        "rho": -0.11479525274130112,
+        "ci_low": -0.19263559710997893,
+        "ci_high": -0.03425880930124216,
+        "naive_p_value": 7.856660091116254e-71
+      }
+    ],
+    "A6_case_studies": [
+      {
+        "pair": "rice + bean",
+        "type": "Curated",
+        "n_shared": 36,
+        "C_main": 0.3636,
+        "top_nutrients": "fiber;potassium;zinc;magnesium"
+      },
+      {
+        "pair": "cheese + tomato",
+        "type": "Curated",
+        "n_shared": 51,
+        "C_main": 0.4545,
+        "top_nutrients": "protein;calcium;zinc;vitamin_a;vitamin_b-12"
+      },
+      {
+        "pair": "rice + chicken",
+        "type": "Curated",
+        "n_shared": 49,
+        "C_main": 0.1818,
+        "top_nutrients": "iron;folate"
+      },
+      {
+        "pair": "butter + milk",
+        "type": "Curated",
+        "n_shared": 74,
+        "C_main": 0.0909,
+        "top_nutrients": "vitamin_a"
+      },
+      {
+        "pair": "basil + tomato",
+        "type": "Curated",
+        "n_shared": 2,
+        "C_main": 0.0909,
+        "top_nutrients": "vitamin_a"
+      },
+      {
+        "pair": "red_kidney_bean + swiss_cheese",
+        "type": "Random Baseline",
+        "n_shared": 45,
+        "C_main": 0.7273,
+        "top_nutrients": "fiber;iron;calcium;potassium;vitamin_a;vitamin_b-12;folate;magnesium"
+      },
+      {
+        "pair": "smoked_sausage + caviar",
+        "type": "Random Baseline",
+        "n_shared": 4,
+        "C_main": 0.0909,
+        "top_nutrients": "folate"
+      },
+      {
+        "pair": "guava + cabbage",
+        "type": "Random Baseline",
+        "n_shared": 13,
+        "C_main": 0.0,
+        "top_nutrients": null
+      }
+    ]
+  }
+}

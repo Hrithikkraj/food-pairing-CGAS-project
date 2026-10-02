@@ -1,0 +1,9 @@
+pair,type,n_shared,C_main,top_nutrients
+rice + bean,Curated,36,0.3636,fiber;potassium;zinc;magnesium
+cheese + tomato,Curated,51,0.4545,protein;calcium;zinc;vitamin_a;vitamin_b-12
+rice + chicken,Curated,49,0.1818,iron;folate
+butter + milk,Curated,74,0.0909,vitamin_a
+basil + tomato,Curated,2,0.0909,vitamin_a
+red_kidney_bean + swiss_cheese,Random Baseline,45,0.7273,fiber;iron;calcium;potassium;vitamin_a;vitamin_b-12;folate;magnesium
+smoked_sausage + caviar,Random Baseline,4,0.0909,folate
+guava + cabbage,Random Baseline,13,0.0,

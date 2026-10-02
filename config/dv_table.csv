@@ -1,0 +1,12 @@
+nutrient,nutrient_id,unit,daily_value,source,checked_on
+Protein,1003,g,50,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Fiber,1079,g,28,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Iron,1089,mg,18,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Calcium,1087,mg,1300,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Potassium,1092,mg,4700,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Zinc,1095,mg,11,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Vitamin C,1162,mg,90,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Vitamin A,1106,µg,900,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Vitamin B-12,1178,µg,2.4,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Folate,1177,µg,400,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01
+Magnesium,1090,mg,420,FDA Daily Values on Nutrition and Supplement Facts labels,2026-10-01

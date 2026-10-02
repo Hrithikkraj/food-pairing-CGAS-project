@@ -1,0 +1,46 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter & IDE
+.ipynb_checkpoints
+.vscode/
+.idea/
+
+# Large raw datasets and generated cache
+data/raw/usda/*.csv
+data/raw/usda/*.zip
+data/raw/ahn/*.csv
+data/raw/ahn/*.txt
+data/raw/ahn/*.tsv
+data/interim/*.parquet
+*.parquet
+
+# Logs & temporary run files
+logs/*.log
+.pytest_cache/
+.ruff_cache/

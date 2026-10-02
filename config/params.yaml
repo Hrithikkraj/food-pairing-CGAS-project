@@ -1,0 +1,118 @@
+# Global pipeline parameters for Flavor-Nutrition Pairing Project
+seed: 42
+min_compounds: 10
+low_pct: 10.0
+high_pct: 20.0
+n_perm: 5000
+n_boot: 2000
+min_recipes_per_cuisine: 50
+min_pair_recipes: 20
+min_pair_recipes_cuisine: 5
+
+# Cutoff grid for sensitivity analysis
+sensitivity_cutoffs:
+  - [5.0, 15.0]
+  - [10.0, 20.0]
+  - [10.0, 25.0]
+  - [15.0, 30.0]
+
+# High-frequency or problematic compounds to filter out
+filter_compounds:
+  - 951  # farnesol
+
+filter_ingredients:
+  - 339  # farnesol ingredient
+
+# Raw cuisine labels grouped for regional analysis
+cuisine_groups:
+  North American:
+    - American
+    - Canada
+    - Southwestern
+    - Southern_SoulFood
+    - Cajun_Creole
+  Latin American:
+    - Mexico
+    - mexico
+    - Mexican
+    - South-America
+    - Central_SouthAmerican
+    - Caribbean
+  Western European:
+    - France
+    - French
+    - Germany
+    - German
+    - UK-and-Ireland
+    - English_Scottish
+    - Irish
+    - Netherlands
+    - Belgium
+    - Switzerland
+    - Austria
+  Southern European:
+    - Italy
+    - Italian
+    - italian
+    - Spain
+    - Portugal
+    - Spanish_Portuguese
+    - Greek
+    - Mediterranean
+  Northern and Eastern European:
+    - Eastern-Europe
+    - EasternEuropean_Russian
+    - Scandinavia
+    - Scandinavian
+  East Asian:
+    - China
+    - Chinese
+    - chinese
+    - Japan
+    - Japanese
+    - japanese
+    - Korea
+    - korean
+    - east_asian
+    - Asian
+    - asian
+  Southeast Asian:
+    - Thailand
+    - Thai
+    - Vietnam
+    - Vietnamese
+    - Philippines
+    - Indonesia
+    - Malaysia
+  South Asian:
+    - India
+    - Indian
+    - Pakistan
+    - Bangladesh
+  Middle Eastern and North African:
+    - MiddleEastern
+    - Turkey
+    - Israel
+    - Iran
+    - Lebanon
+    - North-African
+    - Moroccan
+  African:
+    - African
+    - South-African
+    - East-African
+    - West-African
+
+# Paths
+paths:
+  raw_ahn: "data/raw/ahn"
+  raw_ahn_compounds: "data/raw/ahn/ingr_comp"
+  raw_ahn_recipes: "data/raw/ahn/scirep-cuisines-detail"
+  raw_usda: "data/raw/usda"
+  interim: "data/interim"
+  external: "data/external"
+  processed: "data/processed"
+  reports_tables: "reports/tables"
+  reports_figures: "reports/figures"
+  reports: "reports"
+  logs: "logs"
